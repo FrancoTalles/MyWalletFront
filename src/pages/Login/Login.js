@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   BotaoEntrar,
   InputEmail,
@@ -5,6 +6,7 @@ import {
   LoginBody,
   Logo,
   StyledForm,
+  TextoParaCadastrar,
 } from "./styledLogin";
 
 export default function Login() {
@@ -21,6 +23,11 @@ export default function Login() {
         />
         <BotaoEntrar type="submit">Entrar</BotaoEntrar>
       </StyledForm>
+      <Link to="/cadastro">
+        <TextoParaCadastrar>
+          Primeira vez? Cadastra-se!
+        </TextoParaCadastrar>
+      </Link>
     </LoginBody>
   );
 }

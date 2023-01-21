@@ -5,6 +5,7 @@ export const LoginBody = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #8c11be;
+  height: 100em;
 `;
 
 export const Logo = styled.h1`
@@ -63,11 +64,21 @@ export const BotaoEntrar = styled.button`
   border-radius: 5px;
   margin-top: 13px;
   font-family: "Raleway", sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const TextoParaCadastrar = styled.h1`
+  margin-top: 36px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
 `;
