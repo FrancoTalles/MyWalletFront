@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./constants/globalStyles";
 import Cadastro from "./pages/Cadastro/Cadastro";
+import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Login />}/>
             <Route path="/cadastro" element={<Cadastro />}/>
+            <Route path="/home" element={<Home />}/>
         </Routes>
     </BrowserRouter>
   )
