@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { corBordaInput, corFundoInput, corLetraBotao, corLetraLinkCadastroLogin, corLetrasInput, fundoApp } from "../../constants/colors";
 
 export const LoginBody = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8c11be;
+  background-color: ${fundoApp};
   height: 100em;
 `;
 
@@ -16,7 +17,7 @@ export const Logo = styled.h1`
   font-weight: 400;
   font-size: 32px;
   line-height: 50px;
-  color: #ffffff;
+  color: ${corFundoInput};
   margin-top: 159px;
 `;
 
@@ -30,19 +31,19 @@ export const StyledForm = styled.form`
 export const InputEmail = styled.input`
   width: 100%;
   height: 58px;
-  background-color: #ffffff;
-  border: 1px solid #d4d4d4;
+  background-color: ${corFundoInput};
+  border: 1px solid ${corBordaInput};
   border-radius: 5px;
   margin-top: 32px;
   padding-left: 15px;
-  color: #000000;
+  color: ${corLetrasInput};
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   &::placeholder {
-    color: #000000;
+    color: ${corLetrasInput};
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -58,7 +59,7 @@ export const InputSenha = styled(InputEmail)`
 export const BotaoEntrar = styled.button`
   width: 100%;
   height: 45px;
-  color: #ffffff;
+  color: ${corLetraBotao};
   background-color: #a328d6;
   border: 1px solid #a328d6;
   border-radius: 5px;
@@ -68,9 +69,6 @@ export const BotaoEntrar = styled.button`
   line-height: 26px;
   font-weight: 700;
   font-style: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const TextoParaCadastrar = styled.h1`
@@ -80,5 +78,5 @@ export const TextoParaCadastrar = styled.h1`
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  color: #ffffff;
+  color: ${corLetraLinkCadastroLogin};
 `;

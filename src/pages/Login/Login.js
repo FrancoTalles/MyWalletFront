@@ -23,7 +23,7 @@ export default function Login() {
         />
         <BotaoEntrar type="submit">Entrar</BotaoEntrar>
       </StyledForm>
-      <Link to="/cadastro">
+      <Link to="/cadastro" style={{textDecoration: "none"}}>
         <TextoParaCadastrar>
           Primeira vez? Cadastra-se!
         </TextoParaCadastrar>
