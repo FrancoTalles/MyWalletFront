@@ -14,7 +14,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: ${fundoApp};
-height: 100em;
+height: 100vh;
 `;
 
 export const HeaderDiv = styled.div`

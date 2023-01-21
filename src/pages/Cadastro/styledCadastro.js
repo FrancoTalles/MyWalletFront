@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { corBordaInput, corFundoBordaBotao, corFundoInput, corLetraBotao, corLetraLinkCadastroLogin, corLetrasInput, fundoApp } from "../../constants/colors";
+import { corBordaInput, corFundoBordaBotao, corFundoInput, corLetraBotao, corLetraLinkCadastroLogin, corLetrasInput, corLetrasTitulo, fundoApp } from "../../constants/colors";
 
 export const CadastroBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: ${fundoApp};
-    height: 100em;
+    height: 100vh;
 `
 
 export const Logo = styled.h1`
@@ -17,7 +17,7 @@ export const Logo = styled.h1`
     font-weight: 400;
     font-size: 32px;
     line-height: 50px;
-    color: ${corFundoInput};
+    color: ${corLetrasTitulo};
     margin-top: 95px;
 `;
 
