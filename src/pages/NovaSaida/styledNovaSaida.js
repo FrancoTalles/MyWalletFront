@@ -8,7 +8,7 @@ import {
   fundoApp,
 } from "../../constants/colors";
 
-export const NovaEntradaBody = styled.div`
+export const NovaSaidaBody = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${fundoApp};
@@ -25,7 +25,7 @@ export const NovaEntradaBody = styled.div`
   }
 `;
 
-export const NovaEntradaForm = styled.div`
+export const NovaSaidaForm = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@ export const NovaEntradaForm = styled.div`
   }
 `;
 
-export const NovaEntradaFormButton = styled.button`
+export const NovaSaidaFormButton = styled.button`
   width: 100%;
   height: 45px;
   color: ${corLetraBotao};
