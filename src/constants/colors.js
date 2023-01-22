@@ -12,3 +12,7 @@ export const corLetraSemRegistro = "#868686";
 export const corIconEntradaSaida = "#ffffff";
 export const corLetraEntradaSaida = "#ffffff";
 export const corFundoEntradaSaida = "#a328d6";
+export const corData = "#c6c6c6";
+export const corLetrasRegistro = "#000000";
+export const corValorEntrada = "#03ac00";
+export const corValorSaida = "#c70000";
