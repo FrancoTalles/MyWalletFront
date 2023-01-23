@@ -25,7 +25,7 @@ export const NovaEntradaBody = styled.div`
   }
 `;
 
-export const NovaEntradaForm = styled.div`
+export const NovaEntradaForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +40,12 @@ export const NovaEntradaForm = styled.div`
     border-radius: 5px;
     margin-bottom: 13px;
     padding-left: 15px;
+    color: ${corLetrasInput};
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
     &::placeholder {
       color: ${corLetrasInput};
       font-family: "Raleway", sans-serif;
