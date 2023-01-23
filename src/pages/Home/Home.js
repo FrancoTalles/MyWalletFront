@@ -13,8 +13,6 @@ export default function Home() {
   const teste = [
     { valor: 30.9, descricao: "Primeiro", data: "30/11", type: "output" },
     { valor: 530.9, descricao: "Pagamento", data: "20/11", type: "input" },
-    { valor: 30.9, descricao: "Primeiro", data: "30/11", type: "output" },
-    { valor: 530.9, descricao: "Pagamento", data: "20/11", type: "input" },
   ];
 
   const total = teste?.reduce((acc, movement) => {
