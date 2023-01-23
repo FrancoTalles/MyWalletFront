@@ -25,7 +25,7 @@ export const NovaSaidaBody = styled.div`
   }
 `;
 
-export const NovaSaidaForm = styled.div`
+export const NovaSaidaForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +40,12 @@ export const NovaSaidaForm = styled.div`
     border-radius: 5px;
     margin-bottom: 13px;
     padding-left: 15px;
+    color: ${corLetrasInput};
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
     &::placeholder {
       color: ${corLetrasInput};
       font-family: "Raleway", sans-serif;
