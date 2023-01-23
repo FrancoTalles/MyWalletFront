@@ -29,7 +29,6 @@ export default function Login() {
       ...form,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.value);
   }
 
   function fazerLogin(event) {
@@ -38,8 +37,6 @@ export default function Login() {
     const promise = axios.post(`${env.REACT_APP_API_URL}/login`, form);
 
     promise.then((resposta) => {
-      console.log("logado");
-      console.log(resposta.data)
       setUser(resposta.data);
       navigate("/home");
     })

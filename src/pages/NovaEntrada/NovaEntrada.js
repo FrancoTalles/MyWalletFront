@@ -33,23 +33,23 @@ export default function NovaEntrada() {
       ...form,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.value);
-    console.log(form)
   }
 
   function fazerEntrada(event) {
     event.preventDefault();
     console.log("Fazendo Entrada");
-    const promise = axios.post(`${env.REACT_APP_API_URL}/nova-entrada`, form, config);
+    const promise = axios.post(
+      `${env.REACT_APP_API_URL}/nova-entrada`,
+      form,
+      config
+    );
 
     promise.then((resposta) => {
-      console.log(resposta.data);
-      navigate("/home")
+      navigate("/home");
     });
 
     promise.catch((err) => {
-      console.log(err.response.data);
-      alert(err.response.data)
+      alert(err.response.data);
     });
   }
 
@@ -73,7 +73,9 @@ export default function NovaEntrada() {
           onChange={handleForm}
           value={form.descricao}
         />
-        <NovaEntradaFormButton type="submit">Salvar Entrada</NovaEntradaFormButton>
+        <NovaEntradaFormButton type="submit">
+          Salvar Entrada
+        </NovaEntradaFormButton>
       </NovaEntradaForm>
     </NovaEntradaBody>
   );

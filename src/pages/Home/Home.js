@@ -32,12 +32,10 @@ export default function Home() {
     );
 
     promise.then((resposta) => {
-      console.log(resposta.data);
       setMoves(resposta.data);
     });
 
     promise.catch((err) => {
-      console.log(err.response.data);
       alert(err.response.data);
     });
   }, []);

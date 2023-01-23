@@ -33,8 +33,6 @@ export default function NovaSaida() {
       ...form,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.value);
-    console.log(form);
   }
 
   function fazerSaida(event) {
@@ -47,12 +45,10 @@ export default function NovaSaida() {
     );
 
     promise.then((resposta) => {
-      console.log(resposta.data);
-      navigate("/home")
+      navigate("/home");
     });
 
     promise.catch((err) => {
-      console.log(err.response.data);
       alert(err.response.data);
     });
   }

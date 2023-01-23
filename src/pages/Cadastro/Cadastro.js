@@ -29,7 +29,6 @@ export default function Cadastro() {
       ...form,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.value);
   }
 
   function fazerCadastro(event) {
@@ -38,17 +37,16 @@ export default function Cadastro() {
     const promise = axios.post(`${env.REACT_APP_API_URL}/cadastro`, form);
 
     promise.then((resposta) => {
-      console.log(resposta);
       navigate("/");
     });
 
     promise.catch((err) => {
-      if (form.password !== form.confirmPassword){
+      if (form.password !== form.confirmPassword) {
         setForm({ ...form, password: "", confirmPassword: "" });
-        return alert("As senhas não coincidem")
+        return alert("As senhas não coincidem");
       }
       setForm({ ...form, password: "", confirmPassword: "" });
-      return alert(err.response.data.message)
+      return alert(err.response.data.message);
     });
   }
 
