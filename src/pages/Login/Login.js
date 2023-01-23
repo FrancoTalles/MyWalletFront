@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import env from "react-dotenv";
@@ -11,8 +11,12 @@ import {
   StyledForm,
   TextoParaCadastrar,
 } from "./styledLogin";
+import UserContext from "../../contexts/UserContext";
 
 export default function Login() {
+
+  const {setUser} = useContext(UserContext);
+
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -35,11 +39,13 @@ export default function Login() {
 
     promise.then((resposta) => {
       console.log("logado");
-      console.log(resposta)
+      console.log(resposta.data)
+      setUser(resposta.data);
+      navigate("/home");
     })
 
     promise.catch((err) => {
-      alert(err.response.data.message);
+      alert(err.response.data);
       setForm({...form, password: ""});
     })
   }
